@@ -56,6 +56,10 @@ h2 {
 	color: #333;
 }
 
+.wow {
+	visibility: hidden;
+}
+
 /*CTA Styling*/
 
 #cta-section {
@@ -612,6 +616,18 @@ nav.dark {
 	color: #fff;
 }
 
+#training {
+	background: url(../assets/texture.jpeg) repeat;
+	background-position: center center;
+	padding: 60px;
+}
+
+#training h2 {
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
 /*Menu Section Styling*/
 
 #menu {
@@ -630,7 +646,6 @@ nav.dark {
 	background: rgba(195,131,70,0.9);
 	padding: 20px;
 }
-
 
 #menu h2 {
 	text-align: center;
@@ -849,6 +864,62 @@ nav.dark {
 
 /****************** MEDIA QUERIES *************************/
 
+
+/*TABLET SCREEN STYLING*/
+
+@media only screen and (min-width: 401px) and (max-width: 768px) {
+	h1 {
+		font-size: 2em;
+	}
+	h2 {
+		font-size: 1.7em;
+	}
+	h3 {
+		font-size: 1.3em;
+	}
+	h1 {
+		line-height: 1.3em;
+	}
+	h2, h3 {
+		line-height: 1.5;
+	} 
+	p {
+		font-size: 0.9em;
+		line-height: 1.8;
+	}
+	#cta-section p {
+		font-size: 1.5em;
+	}
+	.navbar {
+		height: 80px;
+	}
+	.navbar #logo {
+		width: 250px;
+	}
+	.navbar-nav>li>a {
+   		padding: 30px 15px;
+    	text-transform: uppercase;
+    	font-weight: 500;
+    	color: #f7e5d9 !important;
+    	letter-spacing: 0.1em;
+    	transition: 0.5s ease-in-out;
+	}
+	#footer {
+		padding: 20px;
+	}
+	#footer p {
+		font-size: 0.9em;
+	}
+	#footer .social {
+		font-size: 1.5em;
+	}
+	#dark-col-1,
+	#brown-col-1 {
+		margin-bottom: 40px;
+	}
+}
+
+
 /*MOBILE SCREEN STYLING*/
 
 @media only screen and (max-width: 400px) {
@@ -864,13 +935,14 @@ nav.dark {
 	h3 {
 		font-size: 1.2em;
 	}
+	h1 {
+		line-height: 1.3em;
+	}
+	h2, h3 {
+		line-height: 1.5;
+	}
 	p {
 		font-size: 0.9em;
-	}
-	h1, h2, h3 {
-		line-height: 1.3;
-	} 
-	p {
 		line-height: 1.8;
 	}
 	#cta-section {
@@ -928,7 +1000,6 @@ nav.dark {
 		letter-spacing: 0.2em;
 		padding: 0 20px;
 	}
-
 	.jumbotron h1 {
 		margin-top: 100px;
 		font-weight: 700;
@@ -949,6 +1020,9 @@ nav.dark {
 	#intro {
 		padding: 20px;
 	}
+	#intro h2 {
+		margin-bottom: 20px;
+	}
 	#services {
 		padding: 20px;
 		text-align: center;
@@ -956,6 +1030,13 @@ nav.dark {
 	}
 	#special {
 		padding: 20px;
+	}
+	#special img {
+		display: block;
+		margin: 0 auto;
+	}
+	#special p {
+		margin: 20px 0;
 	}
 	#testimonials {
 		padding: 20px;
@@ -980,7 +1061,7 @@ nav.dark {
 		width: 180px; 
 	}
 	#footer p {
-		font-size: 0.8em;
+		font-size: 0.9em;
 	}
 	#footer .blog-thumb {
 		margin-bottom: 10px;
@@ -992,7 +1073,7 @@ nav.dark {
 		padding: 10px 20px;
 	}
 	#footer .nav>li>a {
-		font-size: 0.8em;
+		font-size: 0.9em;
 	}
 
 
@@ -1015,13 +1096,17 @@ nav.dark {
 
 	}
 	#mission {
-		padding: 20px 40px;
+		padding: 20px;
 	}
 	#mission #mission-col-1 {
 		margin-bottom: 40px;
 	}
 	#team {
 		padding: 20px;
+	}
+	#team img {
+		display: block;
+		margin: 0 auto;
 	}
 	#team h3,
 	#team h4 {
@@ -1050,6 +1135,9 @@ nav.dark {
 	#menu .dark-col,
 	#brown-col-1 {
 		margin-bottom: 20px;
+	}
+	#training {
+		padding: 20px;
 	}
 
 	/*BLOG PAGE*/
@@ -1085,7 +1173,7 @@ nav.dark {
 		padding: 0 20px;
 	}
 	#contact-hero h1 {
-		margin-top: 170px;
+		margin-top: 200px;
 	}
 	#contact-intro {
 		padding: 20px;
