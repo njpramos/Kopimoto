@@ -91,8 +91,8 @@ nav.dark {
 	border-bottom: 1px solid rgba(247,229,217,0.5);
 }
 
-.navbar #logo {
-	line-height: 60px;
+.navbar #logo img {
+	margin-top: 10px;
 }
 
 .navbar-inverse .navbar-nav>.active>a {
@@ -895,6 +895,9 @@ nav.dark {
 	}
 	.navbar #logo {
 		width: 250px;
+	}
+	.navbar #logo img {
+		margin-top: 0;
 	}
 	.navbar-nav>li>a {
    		padding: 30px 15px;
